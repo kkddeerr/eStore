@@ -79,7 +79,7 @@ public class CartRestController {
         cart.getCartItems().add(cartItem);
         product.getCartItemList().add(cartItem);
         
-        return new ResponseEntity<>(HttpStatus.OK);
+        return new ResponseEntity<Void>(HttpStatus.OK);
     }
 
     @RequestMapping(value = "/cartitem/{productId}", method = RequestMethod.DELETE)
